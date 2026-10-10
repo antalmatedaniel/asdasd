@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Boldog szülinapot! 🎂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Quicksand:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 1: PIN -->
+  <section class="scr" id="s1">
+    <div class="lock">🔒</div>
+    <h1>Add meg a kódot</h1>
+    <p class="sub" id="hint"></p>
+    <div class="dots" id="dots"><i></i><i></i><i></i><i></i></div>
+    <div class="pad" id="pad"></div>
+  </section>
+
+  <!-- 2: CAKE -->
+  <section class="scr" id="s2">
+    <h1 id="ct">Boldog születésnapot!</h1>
+    <svg id="cake" viewBox="0 0 300 290">
+      <defs>
+        <radialGradient id="fg" cx=".5" cy=".7" r=".6">
+          <stop offset="0" stop-color="#fff8b8" />
+          <stop offset=".5" stop-color="#ffb938" />
+          <stop offset="1" stop-color="#ff5a1f" />
+        </radialGradient>
+        <linearGradient id="c1" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0" stop-color="#ffa6c9" />
+          <stop offset="1" stop-color="#ee6a9d" />
+        </linearGradient>
+        <linearGradient id="c2" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0" stop-color="#ffe6f0" />
+          <stop offset="1" stop-color="#ffb4d0" />
+        </linearGradient>
+      </defs>
+      <ellipse cx="150" cy="264" rx="138" ry="18" fill="#bfb3e0" />
+      <ellipse cx="150" cy="259" rx="130" ry="15" fill="#f3efff" />
+      <rect x="45" y="175" width="210" height="84" rx="12" fill="url(#c1)" />
+      <rect x="80" y="118" width="140" height="62" rx="12" fill="url(#c2)" />
+      <g id="dec"></g>
+      <g id="cd"></g>
+    </svg>
+    <div id="msg">Gyújtsuk meg a gyertyákat, aztán kívánj valamit!</div>
+    <button class="btn" id="cb">🕯️ Meggyújtom</button>
+  </section>
+
+  <!-- 3: LEVÉL + KÉPEK -->
+  <section class="scr" id="s3">
+    <div class="tabs"><button class="a">💌 Levél</button><button>📸 Emlékeink</button></div>
+    <div class="split" id="split">
+      <div class="pane">
+        <div class="cnt">
+          <p>Együtt vagyunk már</p>
+          <div class="cg" id="cg"></div>
+        </div>
+        <div class="paper" id="paper"></div>
+      </div>
+      <div class="pane">
+        <div class="gal" id="gal"></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="lb"><button id="lx">✕</button><button id="lp">‹</button><img id="li" alt=""><button id="ln">›</button></div>
+  <canvas id="cf"></canvas>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
